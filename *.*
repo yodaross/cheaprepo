@@ -1,0 +1,18 @@
+//Heap class implementation
+class Heap {
+  static const int SIZE = 100; // maximum heap size
+  int * h;         // pointer to heap array
+  int HeapSize; // heap size 
+public :
+  Heap ();  // heap constructor
+  void addelem ( int ); // add heap item
+  void outHeap ();  // output heap elements in the form of a heap
+  void out ();  // output heap elements in the form of an array
+  int getmax ();  // delete vertex (maximum element)
+  void heapify ( int );  // heap ordering
+};
+Constructor heap
+Heap :: Heap () {
+  h = new int [SIZE];
+  HeapSize = 0; 
+}
